@@ -7,16 +7,16 @@
 3. Include CSS Manifest Files in Layouts
 
 ## Outline
-Located in the lab repository is a simple Rails application called `css_manifest_rails`. Your job is to assemble two valid CSS manifest files, one for the Admin layout and one for the Application layout. There is also a file hidden somewhere that you will need to find and move to allow for loading.
+Your job is to assemble two valid CSS manifest files, one for the Admin layout and one for the Application layout. There is also a file in the lib directory that is not in the correct place.  Make sure you move it to the correct directory. 
 
 ### Application Layout
-- Create an application manifest with 3 of the js files found throughout the application.
+- Create an application manifest with `bootstrap-addon`, `pages` and `hidden_styles` CSS files included.
 - Load your manifest into the application layout.
 
 ### Admin Layout
-- Choose 2 new CSS files that you didn't include in the application manifest and 1 that you did and create an admin manifest.
+- Add the `bootstrap-addon`, `jquery-addon` and `blogs` css files to your admin manifest.
 - Load your manifest into the admin layout. 
-- Add an addition `stylesheet_link_tag` to the admin layout and load the final remaining CSS file.
+- Add an addition `stylesheet_link_tag` to the admin layout and load the `posts` CSS file.
 
 When you finish, start the rails server with `rails server` and browse to http://localhost:3000 for the Application layout and http://localhost:3000/admin for the Admin layout. If you open Chrome dev tools and go to the elements tab, you should see the files you included in your manifest files as link tags in the head tag.
 
